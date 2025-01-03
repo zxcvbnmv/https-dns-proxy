@@ -1,4 +1,4 @@
 # README
 
-Documentation for this project is available at [https://docs.openwrt.melmac.net/https-dns-proxy/](https://docs.openwrt.melmac.net/https-dns-proxy/).
+A lightweight DNS-over-HTTPS proxy for OPENWRT [[https://github.com/aarond10/https_dns_proxy](https://github.com/aarond10/https_dns_proxy)).
 
