@@ -1,12 +1,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=https-dns-proxy
-PKG_VERSION:=2023-12-27
+PKG_VERSION:=2023.12.27
 PKG_RELEASE:=8afbba7
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/aarond10/https_dns_proxy.git
-PKG_SOURCE_DATE:=$(subst(.,-,$(PKG_VERSION)))
 PKG_SOURCE_VERSION:=8afbba71502ddd5aee91602318875a03e86dfc4e
 PKG_MIRROR_HASH:=skip
 
@@ -19,7 +18,7 @@ include $(INCLUDE_DIR)/cmake.mk
 
 TARGET_CFLAGS += $(FPIC)
 TARGET_LDFLAGS += -Wl,--gc-sections
-CMAKE_OPTIONS += -DCLANG_TIDY_EXE= -DGIT_VERSION=$(PKG_SOURCE_DATE)
+CMAKE_OPTIONS += -DCLANG_TIDY_EXE= -DSW_VERSION=$(PKG_VERSION)-$(PKG_RELEASE)
 
 CONFIGURE_ARGS += \
 	$(if $(CONFIG_LIBCURL_OPENSSL),--with-openssl="$(STAGING_DIR)/usr",--without-openssl) \
