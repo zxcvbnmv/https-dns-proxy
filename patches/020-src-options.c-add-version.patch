@@ -5,7 +5,7 @@
    return SW_VERSION;
  #else
 -  return "2023.10.10-atLeast";  // update date sometimes, like 1-2 times a year
-+  return "2025.03.13-0e074b4";  // update date sometimes, like 1-2 times a year
++  return "2025.06.08-2963960";  // update date sometimes, like 1-2 times a year
  #endif
  }
  
